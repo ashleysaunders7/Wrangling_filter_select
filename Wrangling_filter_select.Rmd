@@ -164,7 +164,7 @@ movies %>%
   filter(year >= 2000) %>%
   drop_na(budget)
 ```
-
+We remove the year with our choose, so the filter is ineffective, hence the code is broken. Since the budget remains in the data following the select code, the drop_na budget may still function.
 
 ## Arrange
 
