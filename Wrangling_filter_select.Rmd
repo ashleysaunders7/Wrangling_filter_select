@@ -192,7 +192,7 @@ movies_2000 %>%
 
 # Using the original 'movies' data, what is the longest movie? What is the oldest movie?
 ```
-
+"Blacksmith Scene" from 1893 is the oldest film, and "Cure for Insomnia, The" is the longest.
 
 
 ## Scavenger Hunt
