@@ -220,8 +220,12 @@ The films "Big Fish," "Forrest Gump," "Homem Que Copiava, O," and "Incredibles, 
 3. Create a subset of only Harry Potter movies with the title, rating, budget, and votes. Which movies are included in this data? Which is highest rated? Which has the most votes on imdb.com?
 
 ```{r}
-
+movies_Ques3 <- movies %>%
+  filter(str_detect(title, "Harry Potter")) %>%
+   select(title, rating, budget, votes)    
+movies_Ques3
 ```
+This data includes three films: Harry Potter and the Sorcerer's Stone, Harry Potter and the Chamber of Secrets, and Harry Potter and the Prisoner of Azkaban. "Harry Potter and the Prisoner of Azkaban" has the greatest rating of any Harry Potter film. "Harry Potter and the Sorecerer's Stone" is the most-voted Harry Potter film.
 
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
